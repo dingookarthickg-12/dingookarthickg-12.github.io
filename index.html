@@ -5,6 +5,98 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dingoo Karthick Gopalan | AI & Data Consulting</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+html{
+    scroll-behavior:smooth;
+}
+
+nav{
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:1px solid #e2e8f0;
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.logo{
+    font-size:1.3rem;
+    font-weight:700;
+    color:#0f172a;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#334155;
+    font-weight:500;
+}
+
+.nav-links a:hover{
+    color:#2563eb;
+}
+
+.hero-layout{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-text{
+    flex:2;
+}
+
+.hero-photo{
+    flex:1;
+    text-align:center;
+}
+
+.hero-photo img{
+    width:260px;
+    height:260px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid white;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.evolution{
+    text-align:center;
+    font-size:1.2rem;
+    line-height:2.2;
+    font-weight:600;
+    color:#0f172a;
+}
+
+@media(max-width:768px){
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero-layout{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-photo img{
+    width:180px;
+    height:180px;
+}
+
+}
 <style>
 :root{--primary:#0f172a;--secondary:#334155;--accent:#2563eb;--light:#f8fafc;--border:#e2e8f0;}
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -34,18 +126,71 @@ footer{background:var(--primary);color:white;text-align:center;padding:40px;}
 </style>
 </head>
 <body>
+<nav>
+<div class="container nav-container">
+
+<div class="logo">
+DK
+</div>
+
+<ul class="nav-links">
+<li><a href="#journey">Journey</a></li>
+<li><a href="#domains">Domains</a></li>
+<li><a href="#expertise">Expertise</a></li>
+<li><a href="#case-studies">Case Studies</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</div>
+</nav>
 
 <header>
-<div class="container hero">
+
+<div class="container hero hero-layout">
+
+<div class="hero-text">
+
 <h1>Dingoo Karthick Gopalan</h1>
-<h2>AI Consulting Leader | Enterprise AI Strategist | AI Product Manager</h2>
+
+<h2>
+AI Consulting Leader | Enterprise AI Strategist | AI Product Manager
+</h2>
+
 <p>
-AI and Data Consulting leader with 12+ years of experience helping enterprises identify business opportunities, define product strategies, and deliver AI-powered solutions across Insurance, Life Sciences, Healthcare, and Retail. Passionate about bridging business goals with emerging AI capabilities to create scalable products and measurable impact.
+AI and Data Consulting leader with 12+ years of experience helping enterprises identify business opportunities, define product strategies, and deliver AI-powered solutions across Insurance, Life Sciences, Healthcare, and Retail.
+
+Passionate about bridging business goals with emerging AI capabilities to create scalable products and measurable impact.
 </p>
-<a href="Dingoo Karthick.G.pdf" download class="btn btn-primary">Download Resume</a>
-<a href="https://www.linkedin.com/in/dingoo-karthick-g-2097ba130/" class="btn btn-secondary">LinkedIn</a>
+
+<a href="Dingoo Karthick.G.pdf" download class="btn btn-primary">
+Download Resume
+</a>
+
+<a href="https://www.linkedin.com/in/dingoo-karthick-g-2097ba130/"
+class="btn btn-secondary">
+LinkedIn
+</a>
+
 </div>
+
+<div class="hero-photo">
+
+<img src="profile.jpg"
+alt="Dingoo Karthick">
+
+</div>
+
+</div>
+
 </header>
+<section id="journey" class="about">
+
+<section id="domains">
+<section id="expertise" class="about">
+<section id="case-studies">
+<section id="experience" class="about">
+<section id="contact" class="about">
 
 <section class="about">
 <div class="container">
@@ -68,6 +213,56 @@ My career began in software engineering, where I built a strong foundation in en
 <div class="card"><h3>12</h3><p>Largest Team Managed</p></div>
 </div>
 </div>
+</section>
+
+<section id="domains" class="about">
+
+<div class="container">
+
+<h2 class="section-title">
+Industries & Domains
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Insurance</h3>
+<p>
+P&C Insurance, Claims Processing,
+Health Insurance
+</p>
+</div>
+
+<div class="card">
+<h3>Life Sciences</h3>
+<p>
+Commercial Analytics,
+Customer Data Platforms,
+Medical Affairs
+</p>
+</div>
+
+<div class="card">
+<h3>Healthcare</h3>
+<p>
+Claims Operations,
+Analytics & Transformation
+</p>
+</div>
+
+<div class="card">
+<h3>Retail</h3>
+<p>
+Marketing Analytics,
+Segmentation,
+CLV & Churn
+</p>
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 <section class="about">
@@ -147,6 +342,35 @@ AI Product Leader
 </div>
 </div>
 </section>
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Career Evolution
+</h2>
+
+<div class="evolution">
+
+Software Engineer
+<br>↓<br>
+
+MBA – IIM Kashipur
+<br>↓<br>
+
+Analytics Consultant
+<br>↓<br>
+
+AI Consulting Manager
+<br>↓<br>
+
+AI Product Leader
+
+</div>
+
+</div>
+
+</section>
 
 <section class="about">
 <div class="container">
@@ -170,6 +394,34 @@ AI Product Leader
 <li>Dataiku Generative AI Practitioner</li>
 </ul>
 </div>
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Certifications
+</h2>
+
+<ul>
+
+<li>AZ-900 Azure Fundamentals</li>
+
+<li>AI-900 AI Fundamentals</li>
+
+<li>PL-300 Power BI Data Analyst</li>
+
+<li>DP-900 Data Fundamentals</li>
+
+<li>AI Transformation Leader</li>
+
+<li>Dataiku Generative AI Practitioner</li>
+
+</ul>
+
+</div>
+
 </section>
 
 <section class="about">
