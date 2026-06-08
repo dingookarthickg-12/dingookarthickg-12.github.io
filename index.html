@@ -117,6 +117,49 @@ nav{
 .career-arrow{
     transform:rotate(90deg);
 }
+.career-timeline{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+    margin:50px 0;
+}
+
+.career-timeline::before{
+    content:"";
+    position:absolute;
+    top:50%;
+    left:0;
+    right:0;
+    height:3px;
+    background:#2563eb;
+    z-index:0;
+}
+
+.timeline-node{
+    width:160px;
+    text-align:center;
+    position:relative;
+    z-index:1;
+}
+
+.timeline-node span{
+    display:block;
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #e2e8f0;
+}
+
+.timeline-node::before{
+    content:"";
+    width:16px;
+    height:16px;
+    background:#2563eb;
+    border-radius:50%;
+    display:block;
+    margin:0 auto 15px;
+}
 
 }
 
@@ -352,48 +395,29 @@ CLV & Churn
 
 <section>
 
-<div class="container">
+<div class="career-timeline">
 
-<h2 class="section-title">
-Career Evolution
-</h2>
-
-<div class="career-path">
-
-<div class="career-step">
-    <h3>Software Engineer</h3>
+<div class="timeline-node">
+    <span>Software Engineering</span>
 </div>
 
-<div class="career-arrow">→</div>
-
-<div class="career-step">
-    <h3>MBA</h3>
-    <p>IIM Kashipur</p>
+<div class="timeline-node">
+    <span>MBA<br>IIM Kashipur</span>
 </div>
 
-<div class="career-arrow">→</div>
-
-<div class="career-step">
-    <h3>Analytics Consultant</h3>
+<div class="timeline-node">
+    <span>Analytics Consulting</span>
 </div>
 
-<div class="career-arrow">→</div>
-
-<div class="career-step">
-    <h3>AI Consulting Manager</h3>
+<div class="timeline-node">
+    <span>AI Strategy</span>
 </div>
 
-<div class="career-arrow">→</div>
-
-<div class="career-step">
-    <h3>AI Product Leader</h3>
+<div class="timeline-node">
+    <span>AI Product Leadership</span>
 </div>
 
 </div>
-
-</div>
-
-</section>
 
 <section class="about">
 <div class="container">
